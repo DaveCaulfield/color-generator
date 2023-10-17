@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Inter&family=Montserrat&family=Roboto&family=Source+Sans+3&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</header>
+
+<body>
+    <nav>
+        <input type="color" id="seed-color" name="seed-color" value="#F55A5A">
+
+
+        <select name="color-mode" id="color-mode">
+            <option class="menu-option" value="monochrome">Monochrome</option>
+            <option class="menu-option" value="monochrome-dark">Monochrome-dark</option>
+            <option class="menu-option" value="monochrome-light">Monochrome-light</option>
+            <option class="menu-option" value="analogic">Analogic</option>
+            <option class="menu-option" value="complement">Complement</option>
+            <option class="menu-option" value="analogic-complement">Analogic-complement</option>
+            <option class="menu-option" value="triad">Triad</option>
+        </select>
+
+
+        <button id="get-btn">Get color scheme</button>
+    </nav>
+    <div id="color-container">
+        <div id="color-div-1" class="div-colors"></div>
+        <div id="color-div-2" class="div-colors"></div>
+        <div id="color-div-3" class="div-colors"></div>
+        <div id="color-div-4" class="div-colors"></div>
+        <div id="color-div-5" class="div-colors"></div>
+
+    </div>
+    <div id="hex-values-container">
+        <div id="hex-value-1" class="div-hex-values">#F55A5A</div>
+        <div id="hex-value-2" class="div-hex-values">#2B283A</div>
+        <div id="hex-value-3" class="div-hex-values">#FBF3AB</div>
+        <div id="hex-value-4" class="div-hex-values">#AAD1B6</div>
+        <div id="hex-value-5" class="div-hex-values">#A626D3</div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
