@@ -9,7 +9,8 @@ nav {
     align-items: center;
     justify-content: space-around;
     height: 90px;
-    width: 550px;
+    width: 100vw;
+    max-width: 550px;
     margin: 50px auto 0;
     background-color: #FFFFFF;
 }
@@ -46,7 +47,8 @@ nav {
 #color-container {
     display: flex;
     height: 414px;
-    width: 550px;
+    width: 100vw;
+    max-width: 550px;
     margin: 0 auto;
     background-color: #FFFFFF;
 }
