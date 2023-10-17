@@ -1,13 +1,11 @@
 
-let selectedColorEl = document.getElementById('seed-color')
-// let selectedModeEl = document.getElementById('color-mode')
-// let selectedMode = selectedModeEl.value
+const selectedColorEl = document.getElementById('seed-color')
 
-let div1 = document.getElementById('color-div-1')
-let div2 = document.getElementById('color-div-2')
-let div3 = document.getElementById('color-div-3')
-let div4 = document.getElementById('color-div-4')
-let div5 = document.getElementById('color-div-5')
+const div1 = document.getElementById('color-div-1')
+const div2 = document.getElementById('color-div-2')
+const div3 = document.getElementById('color-div-3')
+const div4 = document.getElementById('color-div-4')
+const div5 = document.getElementById('color-div-5')
 
 // Get the select element by its id
 const select = document.getElementById("color-mode");
@@ -39,15 +37,14 @@ function displayHexLabels(returnedColorsArray) {
     document.getElementById('hex-value-5').innerText = returnedColorsArray[3]
 }
 
-
-// You can create a URL object with the base URL
+//create a URL object with the base URL
 let url = new URL("https://www.thecolorapi.com/scheme");
 
 
+//button eventlistner
 document.getElementById('get-btn').addEventListener("click", function () {
 
     getColorMode()
-    console.log(colorModeValue, index);
 
     // create params object with the query data
     let params = {
@@ -56,7 +53,7 @@ document.getElementById('get-btn').addEventListener("click", function () {
         count: 4,
     }
 
-    // then use the URLSearchParams object to append the URL parameters
+    //use the URLSearchParams object to append the URL parameters
     let searchParams = new URLSearchParams(params);
     url.search = searchParams
 
