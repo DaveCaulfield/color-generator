@@ -81,7 +81,39 @@ nav {
     align-items: center;
     justify-content: space-around;
     height: 46px;
-    width: 550px;
+    max-width: 550px;
     background-color: #FFFFFF;
     margin: 0 auto
+}
+
+
+
+/*.........media query 480px...............*/
+
+@media screen and (max-width: 480px) {
+
+    #hex-values-container,
+    #color-container,
+    nav {
+        margin: 0;
+        max-width: 80vh;
+    }
+
+    nav {
+        height: 65px;
+    }
+
+    #hex-values-container {
+        height: 100px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .div-hex-values {
+        width: 5px;
+        margin: 0;
+        padding: 0;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
 }
