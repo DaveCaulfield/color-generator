@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+
 body {
     background-color: black;
     font-family: 'Inter', sans-serif;
@@ -9,6 +17,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     height: 90px;
+    width: 100vw;
     max-width: 550px;
     margin: 50px auto 0;
     background-color: #FFFFFF;
@@ -26,11 +35,6 @@ nav {
     border-radius: 5px;
 }
 
-/* .menu-option {
-    padding: 50px;
-} */
-
-
 
 #get-btn {
     border: 1px solid #D1D5DB;
@@ -46,6 +50,7 @@ nav {
 #color-container {
     display: flex;
     height: 414px;
+    width: 100vw;
     max-width: 550px;
     margin: 0 auto;
     background-color: #FFFFFF;
@@ -86,34 +91,58 @@ nav {
     margin: 0 auto
 }
 
+.div-hex-values:hover {
+    cursor: pointer;
+}
+
 
 
 /*.........media query 480px...............*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
     #hex-values-container,
     #color-container,
     nav {
         margin: 0;
-        max-width: 80vh;
+        max-width: none;
+
     }
 
     nav {
-        height: 75px;
+        height: 10vh;
+    }
+
+    #color-container {
+        flex-direction: column;
+        height: 90vh;
+
+    }
+
+    .div-colors {
+        width: 80vw;
     }
 
     #hex-values-container {
-        height: 100px;
+        flex-direction: column;
+        height: 90vh;
         margin: 0;
         padding: 0;
     }
 
     .div-hex-values {
-        width: 5px;
+        width: 20vw;
+        height: 200px;
         margin: 0;
         padding: 0;
         writing-mode: vertical-rl;
         text-orientation: mixed;
+        border-bottom: 1px solid lightgray;
+
+
+    }
+
+    #container {
+        display: flex;
     }
 }
