@@ -37,14 +37,15 @@ function displayHexLabels(returnedColorsArray) {
     document.getElementById('hex-value-5').innerText = returnedColorsArray[3]
 }
 
+
 //create a URL object with the base URL
 let url = new URL("https://www.thecolorapi.com/scheme");
 
 
-//button eventlistner
 document.getElementById('get-btn').addEventListener("click", function () {
 
     getColorMode()
+    console.log(colorModeValue, index);
 
     // create params object with the query data
     let params = {
@@ -70,5 +71,14 @@ document.getElementById('get-btn').addEventListener("click", function () {
 })
 
 
+//copy hex value to clipboard
+const copyContent = async (button) => {
+    let copyText = button.innerText;
 
-
+    try {
+        await navigator.clipboard.writeText(copyText);
+        alert('Content copied to clipboard');
+    } catch (err) {
+        alert('Failed to copy: ', err);
+    }
+}
