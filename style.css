@@ -23,14 +23,6 @@ nav {
     background-color: #FFFFFF;
 }
 
-#color-mode {
-    width: 50vw;
-}
-
-#get-btn {
-    width: 20vw;
-}
-
 #seed-color {
     height: 42px;
     width: 61px;
@@ -119,6 +111,14 @@ nav {
 
     nav {
         height: 10vh;
+    }
+
+    #color-mode {
+    width: 50vw;
+    }
+
+    #get-btn {
+    width: 20vw;
     }
 
     #color-container {
